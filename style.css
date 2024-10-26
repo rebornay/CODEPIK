@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+    text-decoration: none;
+}
+
+/* main {
+    background-color:#27272A ;
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    margin-block-start: 8rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+main h1, p {
+    padding-block: 1rem;
+}
+main h6 {
+    padding-block: .8rem;
+}
+
+button {
+    padding: .2rem .5rem;
+}
+
+h2 {
+    display: none;
+} */
+
+
+/* Apply the background to the entire body */
+main {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(/IMAGE/1.jpg);
+    background-size: cover;  /* This makes the image cover the entire background */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    /* height: 100vh; */
+    margin: 0;  /* Removes default margin */
+    /* padding: 2rem 1rem; */
+    transition: background-image 1s ease-in-out;
+    /* display: flex; */
+}
+
+button, input {
+    outline: unset;
+    border: unset;
+    border-radius: 2px;
+}
+
+nav {
+       padding: 2rem 1rem;
+}
+
+ul, nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    list-style: none;
+}
+a {
+    color: white;
+    
+}
+
+.logo:first-child {
+    /* border: 1px solid red; */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.h1ninput {
+    text-align: center;
+    color: white;
+    padding-block: 4rem;
+}
+
+.h1ninput h1 {
+    padding-block-end: 1rem;
+    line-height: 1.2;
+}
+
+.h1ninput>input {
+    padding: 1rem;
+    width: 50%;
+}
+
+.searchbtn {
+    padding: 1rem 1.2rem;
+    background-color: #2955bb;
+    color: white;
+    margin-inline-start: -6rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.searchbtn:hover {
+    background-color: #1f418e;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.612);
+    padding: 2rem;
+    height: 100vh;
+    width: 15rem;
+    transition: all 0.3s ease;
+}
+
+.fa-magnifying-glass {
+    padding-inline-end: .5rem;
+}
+
+ul, li {
+    width: 100%;
+}
+
+.hover:hover {
+    background-color: rgb(63, 62, 62);
+    padding-block: .5rem;
+}
+
+.fa-solid {
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+} 
+
+.whitebtn {
+    padding: .3rem .5rem;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.whitebtn:hover {
+    background-color: #2955bb;
+    color: white;
+}
+
+.black-section {
+    background-color: #121212;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.black-section h1 {
+    color: #feb602;
+    font-size: 1rem;
+    padding-block-end: .8rem;
+}
+
+.black-section .yellow-btn {
+    padding: .8rem 1.4rem;
+    background-color: #feb602;
+    transition: all .3s ease-in-out;
+}
+
+.black-section .yellow-btn:hover {
+    background-color: #fe5a02;
+}
+
+/* **************************MEDIA QUERIES**************************************************** */
+
+@media  (max-width: 800px) {
+    .hidepcbtn {
+        display: none;
+    }
+    nav {
+        gap: unset;
+    }
+
+    .searchbtn {
+        margin-inline-start: -0.7rem;
+    }
+}
+
+@media  (min-width: 1000px) and (max-width: 1400px) {
+    i.fa-solid.fa-bars {
+        display: none;
+    }
+
+    nav {
+        gap: unset;
+    }
+
+}

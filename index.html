@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./FAVICON/fav.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <main class="slideshow">
+        <nav>
+            <!-- FIRST DIV -->
+            <ul class="logo">
+                <li><a href="#">CODEP!K</a></li>
+            </ul>
+            <!-- SECOND DIV -->
+            <ul class="first-list sidebar">
+                <li class="hover" onclick=terminateSidebar()><i class="fa-solid fa-xmark"></i></li>
+                <li class="hover"><a href="#">Tools</a></li>
+                <li class="hover"><a href="#">Image</a></li>
+                <li class="hover"><a href="#">Icon</a></li>
+                <li class="hover"><a href="#">Videos</a></li>
+                <li class="hover"><a href="#">Templates</a></li>
+                <li class="hover"><a href="#">PSD</a></li>
+            </ul>
+
+            <ul class="first-list">
+                <li class="hidepcbtn"><a href="#">Tools</a></li>
+                <li class="hidepcbtn"><a href="#">Image</a></li>
+                <li class="hidepcbtn"><a href="#">Icon</a></li>
+                <li class="hidepcbtn"><a href="#">Videos</a></li>
+                <li class="hidepcbtn"><a href="#">Templates</a></li>
+                <li class="hidepcbtn"><a href="#">PSD</a></li>
+            </ul>
+        <i onclick=displaySidebar() class="fa-solid fa-bars"></i>>
+        </nav>
+        <div class="h1ninput">
+            <h1 class="ctah1">Ready to start programming?</h1>
+            <input type="text" placeholder="Search all assets">
+            <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </div>
+
+        <div class="btn-group">
+            <button class="whitebtn">HTML</button>
+            <button class="whitebtn">CSS</button>
+            <button class="whitebtn">JAVASCRIPT</button>
+        </div>
+
+        <div class="black-section">
+            <h1>50% off Premium plans</h1>
+            <button class="yellow-btn">Get discount</button>
+        </div>
+     </main>
+   <script>
+        function displaySidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function terminateSidebar() {
+            const terminate = document.querySelector('.sidebar')
+            terminate.style.display = 'none'
+        }
+   </script>
+</body>
+</html>
