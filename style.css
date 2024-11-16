@@ -156,7 +156,7 @@ ul, li {
 
 /* ***********************************SECTIONS--FIRST SECTION ********************************************** */
 
-.first-section, .second-section {
+.first-section, .second-section, .third-section {
     padding-block: 1rem 2rem;
     padding-inline: 1rem;
 }
@@ -257,9 +257,28 @@ ul, li {
     color: #119D94;
 }
 
-
 .grid-item-ptext {
     font-weight: 600;
+}
+
+
+/* ***********************************SECTIONS--THIRD SECTION ********************************************** */
+
+.text-collection p span {
+    color: #119D94;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.text-collection h1 {
+    padding-block: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.text-collection .blank-p {
+    padding-block-end: 1.5rem;
+    line-height: 1.2;
 }
 
 /* **************************MEDIA QUERIES**************************************************** */
