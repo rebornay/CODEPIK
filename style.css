@@ -93,6 +93,7 @@ a {
 
 .sidebar:hover {
     background-color: rgba(0, 0, 0, 0.912);
+    transform: scale(1.1);
 }
 
 .fa-magnifying-glass {
@@ -108,7 +109,7 @@ ul, li {
     padding-block: .5rem;
 }
 
-.fa-solid {
+.fa-xmark, .fa-bars {
     color: white;
 }
 
@@ -194,14 +195,72 @@ ul, li {
 }
 
 /* ***********************************SECTIONS--SECOND SECTION ********************************************** */
-/* .fa-vector-square {
-    padding: 2rem 1rem;
-    background-color: #F7F7F7;
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.8rem; 
+    padding-block: 2rem; 
+}
+
+.grid-item {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 1.8rem 1.25rem;
     display: flex;
+    gap: .8rem;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-section .grid-item i {
+    font-size: 1.2rem;
+}
+
+
+.grid-section .grid-item:nth-child(1) > :first-child{
     color: #336AEA;
-    font-size: 2rem;
-} */
+}
+
+.grid-section .grid-item:nth-child(2) > :first-child{
+    color: #EB644C;
+}
+
+.grid-section .grid-item:nth-child(3) > :first-child{
+    color: #1CA199;
+}
+
+.grid-section .grid-item:nth-child(4) > :first-child{
+    color: #EA7E11;
+}
+
+.grid-section .grid-item:nth-child(5) > :first-child{
+    color: #3D9F63;
+}
+
+.grid-section .grid-item:nth-child(6) > :first-child{
+    color: #B07CC6;
+}
+
+.grid-section .grid-item:nth-child(7) > :first-child{
+    color: #336AEA;
+}
+
+.grid-section .grid-item:nth-child(8) > :first-child{
+    color: #119D94;
+}
+
+
+.grid-item-ptext {
+    font-weight: 600;
+}
 
 /* **************************MEDIA QUERIES**************************************************** */
 
@@ -218,13 +277,17 @@ ul, li {
     }
 }
 
-@media  (min-width: 1000px) and (max-width: 1400px) {
+@media  (min-width: 1000px) and (max-width: 1500px) {
     i.fa-solid.fa-bars {
         display: none;
     }
 
     nav {
         gap: unset;
+    }
+
+    .grid-section {
+        grid-template-columns: repeat(8, 1fr); 
     }
 
 }
