@@ -153,9 +153,9 @@ ul, li {
     background-color: #fe5a02;
 }
 
-/* ****************************************SECTIONS ********************************************************* */
+/* ***********************************SECTIONS--FIRST SECTION ********************************************** */
 
-.first-section {
+.first-section, .second-section {
     padding-block: 1rem 2rem;
     padding-inline: 1rem;
 }
@@ -192,6 +192,16 @@ ul, li {
 .first-section-box-btn:hover {
     background-color: #303030;
 }
+
+/* ***********************************SECTIONS--SECOND SECTION ********************************************** */
+/* .fa-vector-square {
+    padding: 2rem 1rem;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    color: #336AEA;
+    font-size: 2rem;
+} */
 
 /* **************************MEDIA QUERIES**************************************************** */
 
